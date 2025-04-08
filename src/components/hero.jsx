@@ -66,6 +66,27 @@ export const Hero = () => {
             </div>
             </div>
         </section>
+
+        <section className="mt-12 mx-12">
+            <div className="">
+                <h3 className="text-5xl font-bold text-center ">Become a true <span className="text-yellow-500">chef</span><ul>with our recipes.</ul></h3>
+                <p className="mt-3 text-xl text-gray-500 text-center">We are a home to variety of recipes<ul>world wide for you to learn.</ul></p>                
+            </div>
+            <div className="grid grid-cols-4 gap-5 mt-12">
+                <div className="mt-16">
+                    <img src="https://framerusercontent.com/images/KOKKHl5aPTDYEH2gUtjgjMyB2I.png?scale-down-to=1024" className=""/>
+                </div>
+                <div className="bg-orange-400 rounded-3xl h-80 mt-32">
+
+                </div>
+                <div className="bg-gray-100 rounded-3xl h-80 mt-40">
+
+                </div>
+                <div className="">
+                    <video className="rounded-3xl object-cover h-[466px] w-full" src="https://framerusercontent.com/assets/ufTWNcW7c0eYOfAV6OynHuzEaDo.mp4" autoPlay loop muted preload="auto"/>
+                </div>
+            </div>
+        </section>
         </>
     );
 }
