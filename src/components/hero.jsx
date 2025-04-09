@@ -4,6 +4,7 @@ import { LuHeart } from "react-icons/lu";
 import { FaCircleHalfStroke } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { PiKnifeLight } from "react-icons/pi";
 
 export const Hero = () => {
     return(
@@ -73,8 +74,17 @@ export const Hero = () => {
                 <p className="mt-3 text-xl text-gray-500 text-center">We are a home to variety of recipes<ul>world wide for you to learn.</ul></p>                
             </div>
             <div className="grid grid-cols-4 gap-5 mt-12">
-                <div className="mt-16">
+                {/* <div className="mt-16 relative">
+                    <LuChefHat className="absolute top-4 right-4 bg-black text-white p-2 rounded-full shadow-md" size={35}/>
+                    <div className="bg-white rounded-3xl absolute bottom-4 left-4"> Easy to follow recipe</div>
                     <img src="https://framerusercontent.com/images/KOKKHl5aPTDYEH2gUtjgjMyB2I.png?scale-down-to=1024" className=""/>
+                    
+                </div> */}
+                <div className="mt-16 bg-[url('https://framerusercontent.com/images/KOKKHl5aPTDYEH2gUtjgjMyB2I.png?scale-down-to=1024')] bg-cover bg-center rounded-3xl h-80 relative">
+                <div>
+                <LuChefHat className="absolute top-4 right-4 bg-black text-white p-2 rounded-full shadow-md" size={35}/>
+                <div className="flex justify-content items-center gap-2 bg-white rounded-3xl shadow-md text-gray-800 absolute bottom-4 left-4 py-1 px-2"> <span className="flex justify-content items-center bg-orange-100 text-orange-300 rounded-full p-2"><PiKnifeLight size={20}/></span>Easy to follow recipes</div>
+                </div>
                 </div>
                 <div className="bg-orange-400 rounded-3xl h-80 mt-32">
 
