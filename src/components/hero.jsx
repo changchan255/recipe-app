@@ -5,6 +5,8 @@ import { FaCircleHalfStroke } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { PiKnifeLight } from "react-icons/pi";
+import { MdLiveTv } from "react-icons/md";
+import { BiDish } from "react-icons/bi";
 
 export const Hero = () => {
     return(
@@ -74,26 +76,65 @@ export const Hero = () => {
                 <p className="mt-3 text-xl text-gray-500 text-center">We are a home to variety of recipes<ul>world wide for you to learn.</ul></p>                
             </div>
             <div className="grid grid-cols-4 gap-5 mt-12">
-                {/* <div className="mt-16 relative">
-                    <LuChefHat className="absolute top-4 right-4 bg-black text-white p-2 rounded-full shadow-md" size={35}/>
-                    <div className="bg-white rounded-3xl absolute bottom-4 left-4"> Easy to follow recipe</div>
-                    <img src="https://framerusercontent.com/images/KOKKHl5aPTDYEH2gUtjgjMyB2I.png?scale-down-to=1024" className=""/>
-                    
-                </div> */}
                 <div className="mt-16 bg-[url('https://framerusercontent.com/images/KOKKHl5aPTDYEH2gUtjgjMyB2I.png?scale-down-to=1024')] bg-cover bg-center rounded-3xl h-80 relative">
                 <div>
                 <LuChefHat className="absolute top-4 right-4 bg-black text-white p-2 rounded-full shadow-md" size={35}/>
                 <div className="flex justify-content items-center gap-2 bg-white rounded-3xl shadow-md text-gray-800 absolute bottom-4 left-4 py-1 px-2"> <span className="flex justify-content items-center bg-orange-100 text-orange-300 rounded-full p-2"><PiKnifeLight size={20}/></span>Easy to follow recipes</div>
                 </div>
                 </div>
-                <div className="bg-orange-400 rounded-3xl h-80 mt-32">
-
+                <div className="bg-orange-400 rounded-3xl h-72 mt-32">
+                    <div className="py-16 px-8">
+                    <h1 className="text-white text-4xl font-bold">"Cooking has never been this easy"!</h1>
+                    <div className="mt-5 flex items-center gap-3">
+                        <img className="w-10 h-10 object-cover" src="https://framerusercontent.com/images/P62zYS44ywQITCMHRRdwvgy6AmU.png"></img>
+                        <div>
+                            <h3 className="text-white font-bold text-xl">Marsha Rianty</h3>
+                            <p className="text-white">Master Chef 2023</p>
+                        </div>
+                    </div>
+                    </div>                  
                 </div>
-                <div className="bg-gray-100 rounded-3xl h-80 mt-40">
+                <div className="bg-gray-100 rounded-3xl h-80 mt-40 hover:scale-105 transistion-all duration-300">
+                    <div className="m-3">
+                        <div className="bg-white rounded-3xl h-full w-full p-5 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
+                            <div className="flex items-center gap-3">
+                                <MdLiveTv className="bg-orange-100 text-orange-300 rounded-full px-2 py-3" size={50}/>
+                                <div>
+                                <h3 className="font-bold">Watch Now</h3>
+                                <p className="text-gray-500">Cook with Chef Johnson</p>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div className="bg-white rounded-3xl h-full w-full mt-3 p-5 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
+                            <div className="flex items-center gap-3">
+                                <BiDish className="bg-orange-100 text-orange-300 rounded-full px-2 py-3" size={50}/>
+                                <div>
+                                <h3 className="font-bold">Today's Recipe</h3>
+                                <p className="text-gray-500">Caprese Salad Skewers</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="bg-white rounded-3xl h-full w-full mt-3 p-5 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
+                            <div className="flex items-center gap-3">
+                                <LuChefHat className="bg-orange-100 text-orange-300 rounded-full px-2 py-3" size={50}/>
+                                <div>
+                                <h3 className="font-bold">Contribute Now</h3>
+                                <p className="text-gray-500">Share your special recipe!</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div className="">
+                <div className="relative">
+                   
                     <video className="rounded-3xl object-cover h-[466px] w-full" src="https://framerusercontent.com/assets/ufTWNcW7c0eYOfAV6OynHuzEaDo.mp4" autoPlay loop muted preload="auto"/>
+                    <button className="group bg-white text-black rounded-3xl px-3 py-2 absolute top-4 right-4 z-10 flex justify-center items-center gap-3 hover:bg-black hover:text-white transistion-all duration-300" href=""><MdLiveTv className="bg-orange-100 text-orange-300 rounded-full px-1 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300" size={25}/> Watch Now</button>
+                    <div className="absolute bottom-3 left-0 w-full h-full bg-gradient-to-t from-orange-400 to-transparent rounded-3xl p-5 pointers-events-none">
+                    <h3 className="absolute bottom-4 text-white font-bold text-4xl p-5">Cook with Master Chefs</h3>
+                    </div>
                 </div>
             </div>
         </section>
