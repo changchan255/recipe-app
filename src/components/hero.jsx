@@ -7,6 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { PiKnifeLight } from "react-icons/pi";
 import { MdLiveTv } from "react-icons/md";
 import { BiDish } from "react-icons/bi";
+import { FaClock } from "react-icons/fa6";
 
 export const Hero = () => {
     return(
@@ -94,9 +95,9 @@ export const Hero = () => {
                     </div>
                     </div>                  
                 </div>
-                <div className="bg-gray-100 rounded-3xl h-80 mt-40 hover:scale-105 transistion-all duration-300">
-                    <div className="m-3">
-                        <div className="bg-white rounded-3xl h-full w-full p-5 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
+                <div className="bg-gray-100 rounded-3xl h-72 mt-40 hover:scale-105 transistion-all duration-300">
+                    <div className="m-5">
+                        <div className="bg-white rounded-2xl h-full w-full p-3 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
                             <div className="flex items-center gap-3">
                                 <MdLiveTv className="bg-orange-100 text-orange-300 rounded-full px-2 py-3" size={50}/>
                                 <div>
@@ -106,7 +107,7 @@ export const Hero = () => {
                             </div>
 
                         </div>
-                        <div className="bg-white rounded-3xl h-full w-full mt-3 p-5 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
+                        <div className="bg-white rounded-2xl h-full w-full mt-3 p-3 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
                             <div className="flex items-center gap-3">
                                 <BiDish className="bg-orange-100 text-orange-300 rounded-full px-2 py-3" size={50}/>
                                 <div>
@@ -116,7 +117,7 @@ export const Hero = () => {
                             </div>
 
                         </div>
-                        <div className="bg-white rounded-3xl h-full w-full mt-3 p-5 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
+                        <div className="bg-white rounded-2xl h-full w-full mt-3 p-3 hover:bg-gray-100 transistion-all duration-300 cursor-pointer">
                             <div className="flex items-center gap-3">
                                 <LuChefHat className="bg-orange-100 text-orange-300 rounded-full px-2 py-3" size={50}/>
                                 <div>
@@ -128,16 +129,45 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative">
+                <div className="relative cursor-pointer">
                    
                     <video className="rounded-3xl object-cover h-[466px] w-full" src="https://framerusercontent.com/assets/ufTWNcW7c0eYOfAV6OynHuzEaDo.mp4" autoPlay loop muted preload="auto"/>
                     <button className="group bg-white text-black rounded-3xl px-3 py-2 absolute top-4 right-4 z-10 flex justify-center items-center gap-3 hover:bg-black hover:text-white transistion-all duration-300" href=""><MdLiveTv className="bg-orange-100 text-orange-300 rounded-full px-1 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300" size={25}/> Watch Now</button>
-                    <div className="absolute bottom-3 left-0 w-full h-full bg-gradient-to-t from-orange-400 to-transparent rounded-3xl p-5 pointers-events-none">
+                    <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-orange-400 to-transparent rounded-3xl p-5 pointers-events-none">
                     <h3 className="absolute bottom-4 text-white font-bold text-4xl p-5">Cook with Master Chefs</h3>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section className="mt-12 mx-12">
+            <div className="mt-40 w-full h-[666px] bg-[url('https://framerusercontent.com/images/ZKztGxPALx9VM5DXgXlZ35WIFiA.jpg')] bg-cover bg-center rounded-3xl">
+                <div className="w-[60%] ml-[40%] relative">
+                    <div className="absolute top-8 right-8">
+                    <button className="group bg-black text-white rounded-full px-12 py-3 flex justify-center items-center relative">
+                        <span className="text-white group-hover:translate-x-[-6px] transistion-all duration-300">See Details</span>
+                        <span className="absolute right-7 text-orange-500 opacity-0 translate-x-[-6px] group-hover:opacity-100 transistion-all duration-300 translate-x-0"><FaArrowRightLong size={16}/></span>
+                    </button>
+                    </div>
+                    <div className="absolute mt-40">
+                    <h1 className="text-[80px] font-bold">Spicy Beef Mexican Tacos</h1>
+                    <h3 className="text-gray-500 text-xl">This mouthwatering dish combines juicy, seasoned beef with the vibrant flavors of traditional Mexican cuisine. </h3>
+                    <div className="mt-32 flex items-center justify-start gap-5">
+                        <div className="flex justify-center items-center gap-3">
+                            <FaClock size={35}/>
+                            <p className="text-lg">15 minutes</p>
+                        </div>
+                        <div className="flex justify-center items-center gap-3">
+                            <LuChefHat size={35}/>
+                            <p className="text-lg">Chef Maria Rodriguez</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </section>
         </>
+        
     );
 }
