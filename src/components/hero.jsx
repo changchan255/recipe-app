@@ -167,6 +167,98 @@ export const Hero = () => {
                 
             </div>
         </section>
+
+        <section className="mt-12 mx-12">
+            <div className="flex justify-between items-end">
+                <h1 className="text-5xl font-bold">Popular <span className="text-yellow-500">Recipes</span> Today</h1>
+                    <button className="group bg-black text-white rounded-full px-7 py-3 flex justify-center items-center relative">
+                        <span className="text-white group-hover:translate-x-[-8px] transistion-all duration-300">See More Recipes</span>
+                        <span className="absolute right-7 text-orange-500 opacity-0 translate-x-0 group-hover:opacity-100 transistion-all duration-300 translate-x-3"><FaArrowRightLong size={16}/></span>
+                    </button>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-10 mt-12">
+                <div className="bg-primary rounded-3xl p-6">
+                    <h3 className="text-4xl font-bold">Spicy Beef Mexican Tacos</h3>
+                    <img className="w-full h-[446px] object-cover rounded-3xl mt-5" src="https://framerusercontent.com/images/ADupjE4PKNi29LQWdKDb0vNxVRk.png"/>
+                    <button 
+                        onMouseEnter={(e) => {
+                            const anim = e.currentTarget.querySelector('.animate-target');
+                            anim.classList.remove('animate-slide');
+                            void anim.offsetWidth; // 👈 force reflow
+                            anim.classList.add('animate-slide');
+                        }}
+                        onMouseLeave={(e) => {
+                            const anim = e.currentTarget.querySelector('.animate-target');
+                            anim.classList.remove('animate-slide');
+                            void anim.offsetWidth;
+                            anim.classList.add('animate-slide');
+                        }}
+                        className="group relative w-full bg-black text-white text-lg rounded-full mt-5 px-6 py-3 overflow-hidden hover:scale-105 active:translate-y-1 transistion-all duration-300"
+                        >
+                        <span className="animate-target flex justify-between items-center gap-3 pointer-events-none opacity-100">
+                            <span className="text-white">See Complete Recipes</span>
+                            <span className="bg-white w-7 h-7 text-black rounded-full flex justify-center items-center group-hover:bg-orange-400 group-hover:text-white">
+                            <LuChefHat size={20} />
+                            </span>
+                        </span>
+                    </button>                            
+                </div>   
+
+                <div className="bg-primary rounded-3xl p-6">
+                    <h3 className="text-4xl font-bold">Spicy Beef Mexican Tacos</h3>
+                    <img className="w-full h-[446px] object-cover rounded-3xl mt-5" src="https://framerusercontent.com/images/ADupjE4PKNi29LQWdKDb0vNxVRk.png"/>
+                    <button 
+                        onMouseEnter={(e) => {
+                            const anim = e.currentTarget.querySelector('.animate-target');
+                            anim.classList.remove('animate-slide');
+                            void anim.offsetWidth; // 👈 force reflow
+                            anim.classList.add('animate-slide');
+                        }}
+                        onMouseLeave={(e) => {
+                            const anim = e.currentTarget.querySelector('.animate-target');
+                            anim.classList.remove('animate-slide');
+                            void anim.offsetWidth;
+                            anim.classList.add('animate-slide');
+                        }}
+                        className="group relative w-full bg-black text-white text-lg rounded-full mt-5 px-6 py-3 overflow-hidden hover:scale-105 active:translate-y-1 transistion-all duration-300"
+                        >
+                        <span className="animate-target flex justify-between items-center gap-3 pointer-events-none opacity-100">
+                            <span className="text-white">See Complete Recipes</span>
+                            <span className="bg-white w-7 h-7 text-black rounded-full flex justify-center items-center group-hover:bg-orange-400 group-hover:text-white">
+                            <LuChefHat size={20} />
+                            </span>
+                        </span>
+                    </button>                            
+                </div> 
+
+                <div className="bg-primary rounded-3xl p-6">
+                    <h3 className="text-4xl font-bold">Spicy Beef Mexican Tacos</h3>
+                    <img className="w-full h-[446px] object-cover rounded-3xl mt-5" src="https://framerusercontent.com/images/ADupjE4PKNi29LQWdKDb0vNxVRk.png"/>
+                    <button 
+                        onMouseEnter={(e) => {
+                            const anim = e.currentTarget.querySelector('.animate-target');
+                            anim.classList.remove('animate-slide');
+                            void anim.offsetWidth; // 👈 force reflow
+                            anim.classList.add('animate-slide');
+                        }}
+                        onMouseLeave={(e) => {
+                            const anim = e.currentTarget.querySelector('.animate-target');
+                            anim.classList.remove('animate-slide');
+                            void anim.offsetWidth;
+                            anim.classList.add('animate-slide');
+                        }}
+                        className="group relative w-full bg-black text-white text-lg rounded-full mt-5 px-6 py-3 overflow-hidden hover:scale-105 active:translate-y-1 transistion-all duration-300"
+                        >
+                        <span className="animate-target flex justify-between items-center gap-3 pointer-events-none opacity-100">
+                            <span className="text-white">See Complete Recipes</span>
+                            <span className="bg-white w-7 h-7 text-black rounded-full flex justify-center items-center group-hover:bg-orange-400 group-hover:text-white">
+                            <LuChefHat size={20} />
+                            </span>
+                        </span>
+                    </button>                            
+                </div>             
+            </div>
+        </section>
         </>
         
     );
