@@ -177,30 +177,24 @@ export const Hero = () => {
                     </button>
             </div>
             <div className="flex flex-col sm:flex-row gap-10 mt-12">
-                <div className="bg-primary rounded-3xl p-6">
-                    <h3 className="text-4xl font-bold">Spicy Beef Mexican Tacos</h3>
-                    <img className="w-full h-[446px] object-cover rounded-3xl mt-5" src="https://framerusercontent.com/images/ADupjE4PKNi29LQWdKDb0vNxVRk.png"/>
-                    <button 
-                        onMouseEnter={(e) => {
-                            const anim = e.currentTarget.querySelector('.animate-target');
-                            anim.classList.remove('animate-slide');
-                            void anim.offsetWidth; // 👈 force reflow
-                            anim.classList.add('animate-slide');
-                        }}
-                        onMouseLeave={(e) => {
-                            const anim = e.currentTarget.querySelector('.animate-target');
-                            anim.classList.remove('animate-slide');
-                            void anim.offsetWidth;
-                            anim.classList.add('animate-slide');
-                        }}
-                        className="group relative w-full bg-black text-white text-lg rounded-full mt-5 px-6 py-3 overflow-hidden hover:scale-105 active:translate-y-1 transistion-all duration-300"
-                        >
-                        <span className="animate-target flex justify-between items-center gap-3 pointer-events-none opacity-100">
-                            <span className="text-white">See Complete Recipes</span>
-                            <span className="bg-white w-7 h-7 text-black rounded-full flex justify-center items-center group-hover:bg-orange-400 group-hover:text-white">
+                <div className="group bg-primary rounded-3xl p-6 hover:scale-105 transistion-all duration-300">
+                    <h3 className="text-4xl font-bold group-hover:opacity-0">Spicy Beef Mexican Tacos</h3>
+                    <img className="w-full h-[446px] object-cover rounded-3xl mt-5 group-hover:opacity-0" src="https://framerusercontent.com/images/ADupjE4PKNi29LQWdKDb0vNxVRk.png"/>
+                    <button className="group w-full bg-black text-white text-lg rounded-full mt-5 px-6 py-5 overflow-hidden">
+                        <div className="">
+                        <span className="flex items-center justify-between gap-3 opacity-100 translate-x-0 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-4">
+                            <span>See Complete Recipes</span>
+                            <span className="bg-white w-7 h-7 text-black rounded-full flex justify-center items-center">
                             <LuChefHat size={20} />
                             </span>
                         </span>
+                        <span className="flex items-center justify-between gap-3 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                            <span>See Complete Recipes</span>
+                            <span className="bg-orange-400 w-7 h-7 text-white rounded-full flex justify-center items-center">
+                            <LuChefHat size={20} />
+                            </span>
+                        </span>
+                        </div>
                     </button>                            
                 </div>   
 
